@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="individualBank_v2:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/individualBank_v2_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="IndividualBank" />
+        </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="main" />
+          <element id="module-output" name="webapp" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="individualBank_v2/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bcd74bc8-b51d-4e68-a37a-4acfd45f7fda" name="bank1(TH)" url="http://144.24.75.25:8081">
+        <fileTransfer rootFolder="/usr/local/tomcat" accessType="SFTP" host="144.24.75.25" port="50001" sshConfigId="8f7098fa-3abd-446a-978a-cfdfc4648d0e" sshConfig="bank1(TH)">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="f8df3745-0db4-4549-8ab3-65c313dcac8f" name="bank2(ZERO)" url="http://144.24.75.25:8082">
+        <fileTransfer rootFolder="/usr/local/tomcat" accessType="SFTP" host="144.24.75.25" port="50002" sshConfigId="77b417d1-081e-4f4a-b755-e5eb3fc75a39" sshConfig="bank2(ZERO)">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="c9773214-23ee-44dc-95a2-71adf1260ab6" name="bank3(HI)" url="http://144.24.91.101:8083">
+        <fileTransfer rootFolder="/usr/local/tomcat" accessType="SFTP" host="144.24.91.101" port="50003" sshConfigId="d8d3a384-3299-426a-b894-248ccd6b57ba" sshConfig="bank3(HI)">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="a99fab36-2a1f-418f-acb1-124beb9416ef" name="bank4(ALMOND)" url="http://144.24.91.101:8084">
+        <fileTransfer rootFolder="/usr/local/tomcat" accessType="SFTP" host="144.24.91.101" port="50004" sshConfigId="cc88d00c-1872-4f38-bd1a-6f7ef6525e3a" sshConfig="bank4(ALMOND)">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

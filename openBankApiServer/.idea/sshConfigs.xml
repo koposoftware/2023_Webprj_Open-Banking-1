@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="144.24.75.25" id="8f7098fa-3abd-446a-978a-cfdfc4648d0e" port="50001" customName="bank1(TH)" nameFormat="CUSTOM" username="testuser" useOpenSSHConfig="true">
+        <option name="customName" value="bank1(TH)" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="144.24.75.25" id="77b417d1-081e-4f4a-b755-e5eb3fc75a39" port="50002" customName="bank2(ZERO)" nameFormat="CUSTOM" username="testuser" useOpenSSHConfig="true">
+        <option name="customName" value="bank2(ZERO)" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="144.24.91.101" id="d8d3a384-3299-426a-b894-248ccd6b57ba" port="50003" customName="bank3(HI)" nameFormat="CUSTOM" username="testuser" useOpenSSHConfig="true">
+        <option name="customName" value="bank3(HI)" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="144.24.91.101" id="cc88d00c-1872-4f38-bd1a-6f7ef6525e3a" port="50004" customName="bank4(ALMOND)" nameFormat="CUSTOM" username="testuser" useOpenSSHConfig="true">
+        <option name="customName" value="bank4(ALMOND)" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

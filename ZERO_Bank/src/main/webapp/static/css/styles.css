@@ -1,0 +1,766 @@
+@charset "EUC-KR";
+html {
+  overflow: hidden;
+}
+h1{
+  font-family: 'Nanum Gothic', sans-serif;
+
+}
+#menu_wrap > #transferBtn{
+  padding: 8px 16px;
+  color: #FAF5EC;
+  background-color: #666;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin:3px;
+}
+#menu_wrap >  #transferBtn:hover{
+  background-color:#FAF5EC;
+  color:#666;
+}
+#welcomeMessage {
+  color: #666666;
+  text-align: center;
+  margin: 15px;
+  font-size:medium;
+  font-family: 'NanumSquareRound', sans-serif;
+  /* 추가적인 스타일 속성들을 여기에 추가할 수 있습니다 */
+}
+#a_link{
+  color: #fff;
+  text-decoration: none;
+  background-color:#000;
+  padding:10px;
+  border-radius:20px;
+
+  /* 기타 원하는 스타일을 추가하세요 */
+}
+#a_link:hover{
+  background-color:#666;
+}
+#menu_wrap2,
+#menu_wrap{
+  text-align:center;
+  margin: 0 auto;
+  font-family: 'NanumSquareRound', sans-serif;
+}
+html, body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+}
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  opacity: 0.8; /* 초기에 선명한 상태로 설정 */
+  transition: opacity 0.3s ease; /* 변화에 애니메이션 효과 추가 */
+}
+
+.header-fixed:hover {
+  opacity: 1; /* 마우스를 갖다 댔을 때 반투명하게 설정 */
+}
+.section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.section#section2,
+.section#section3,
+.section#section4 {
+  text-align: center;
+  margin:0 auto;
+  font-family: 'NanumSquareRound', sans-serif;
+}
+
+.section#section2 > img,
+.section#section4 > img,
+.section#section3 >img {
+  display: inline-block;
+}
+
+
+/*first header 상단 메뉴*/
+#first-header{
+  margin:50px auto 0;
+  height:50px;
+  width:80%;
+  display: flex;
+  justify-content: center;
+}
+.first-header-container{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width:80%;
+  margin:0 auto;
+}
+hr{
+  width:80%;
+}
+.header-button1{
+  padding: 8px 16px;
+  color: #6610f2;
+  background-color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin:3px;
+}
+.header-button2{
+  padding: 8px 16px;
+  color: white;
+
+  background-color: #6610f2;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin:3px;
+}
+/*Main.jsp*/
+#header {
+
+  display: flex;
+  width:70%;
+  height:30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #fff;
+  margin-top: 30px;
+  margin:0 auto;
+}
+
+#main-text {
+  color: #000;
+  font-size: 30px;
+  font-weight: 1100px;
+  font-family: 'NanumSquareRound', sans-serif;
+  text-decoration: none;
+  margin-right: 20px; /* Add margin to create space between "TH은행" and the menu */
+  display: inline-flex; /* Use inline-flex display to prevent line breaks */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+#main-text a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+#main-text img {
+  margin-top:20px;
+  display: inline-flex; /* Use inline-flex display to prevent line breaks */
+  white-space: nowrap;
+}
+#main_wrap{
+  display: flex;
+
+  flex-direction: column;
+
+}
+.menu {
+  display: flex;
+  justify-content: flex-end; /* Position the menu items on the right side */
+  align-items: center; /* Align menu items vertically in the center */
+}
+
+#duplicateCheckButton,
+.valiButton
+{
+  font-family: 'NanumSquareRound', sans-serif;
+  border: 1px solid #605C59; /* 원하는 스타일로 border 설정 */
+  padding: 3px 5px;
+  font-size: 12px; /* 버튼 내부의 폰트 크기 조정 */
+  background-color: #666; /* 버튼 배경색 지정 */
+  color: #fff; /* 버튼 텍스트 색상 지정 */
+  cursor: pointer; /* 커서를 손가락 모양으로 변경 */
+  border-radius: 10px;
+}
+#menu-button2,
+#menu-button2-1,
+#menu-button2-2{
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  padding:10px;
+  width: 90px;
+  text-align: center;
+  position: relative; /* 요소를 고정 위치로 설정 */
+  top: 20px; /* 상단에서 50px 간격으로 위치 */
+}
+#menu-button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 20px;
+  width: 70px;
+  text-align: center;
+  float: right;
+  position: relative;
+  top:20px;
+  font-family: 'NanumSquareRound', sans-serif;
+
+}
+
+#menu-button:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #666;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.scrollable > p {
+  font-family: 'NanumSquareRound', sans-serif;
+  text-align: left;
+}
+#menu-button:hover:after {
+  transform: scaleX(1);
+}
+#menu-button2:hover,
+#menu-button2-1:hover,
+#menu-button2-2:hover{
+  cursor:pointer;
+  color: #fff;
+  background-color: #666;
+}
+
+#main_color {
+  text-align: center;
+  width:70%;
+  /*
+  background: linear-gradient(-45deg, #141E30,#243B55,#000428,#2980b9);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;*/
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.main_p{
+  right: 20%;
+  position: absolute;
+  bottom:0;
+
+}
+#main_color > #main_content > #wrap_textimg > h3 {
+  text-align: left;
+  color: #fff;
+}
+
+#main_color > #main_content > #wrap_textimg > h1 {
+  text-align: left;
+  color: #fff;
+  text-shadow: 0 3px 3px #666, 0 3px 3px #19191c;
+  font-weight: bolder;
+  font-size: 100px;
+  margin: 0;
+}
+#wrap_textimg{
+  padding: 30px;
+  width: 50%;
+  float: left;
+}
+#main_color > #main_content > #wrap_textimg > p {
+  color: #fff;
+  margin: 5px;
+  text-align: left;
+}
+hr {
+  color:#666;
+  width:70%;
+  text-align: center;
+}
+#main_color > #main_content > img {
+  width: 40%;
+  float: left;
+  padding-top:10%;
+}
+
+
+#image-container {
+  display: flex;
+}
+
+#image-container > h1 {
+  text-align: left;
+  color: #C4D7B2;
+  font-weight: bolder;
+  font-size: 100px;
+  margin: 0;
+
+}
+
+/*고객센터 이벤트 버튼 */
+#button-container {
+  display: flex;
+  text-align: left;
+  margin-top: 20px;
+}
+
+#button-container a.button {
+  padding: 10px 20px;
+  background-color: #fff !important;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 20px;
+  height: 25px;
+  width: 90px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#button-container a.button:hover {
+  color: #666;
+}
+
+/*추천상품*/
+#main_content {
+  float: left;
+  width: 100%;
+  margin: 30px;
+}
+
+#main_color > #main-recommand {
+  width: 30%;
+  margin:20px;
+
+}
+
+#main-recommand #recommand1 {
+  background-color: #FAF5EC;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+#main-recommand #recommand2 {
+  background-color: #FAF5EC;
+  width: 100%;
+  height: 300px;
+}
+
+.swift-container {
+  width: 50%;
+}
+
+.swift-container h1 {
+  margin: 0;
+  letter-spacing: -1px;
+  font-size: var(--headingSize);
+}
+
+.swift-container span {
+  display: inline-block;
+  overflow: hidden;
+  animation: 0.3s swift-up ease-in-out forwards;
+}
+
+.swift-container i {
+  font-style: normal;
+  position: relative;
+  top: var(--headingSize);
+  animation: 0.5s swift-up ease-in-out forwards;
+}
+
+@keyframes swift-up {
+  to {
+    top: 0;
+  }
+}
+/*밑에 이용약관 부분 */
+#terms {
+  top:10px;
+  margin: 0;
+  width: 80%;
+  background: #444;
+  color: #fff;
+  height: 200px;
+  line-height: 200px;
+  clear: both;
+  text-align: center;
+  margin: 0 auto;
+  padding:20px;
+}
+.button-user-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+.button2 {
+  background-color: #000;
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin:3px;
+
+}
+.button1 {
+  padding: 8px 16px;
+  color: #FAF5EC;
+  background-color: #666;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin:3px;
+
+}
+
+.button1:hover {
+  color: #666;
+  background-color: #FAF5EC;
+}
+.button2:hover{
+  color:#000;
+  background-color:#FAF5EC;
+}
+/*loinInput.jsp*/
+form {
+  text-align: center;
+  margin: 20px;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'NanumSquareRound', sans-serif;
+  margin:0 auto;
+}
+
+form h1 {
+  font-family: 'NanumSquareRound', sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+  text-align:center;
+  margin-bottom: 20px;
+}
+
+#TH-table,
+#ZERO-table,
+#HI-table,
+#ALMOND-table,
+form table{
+  margin-bottom: 20px;
+  width:70%;
+  text-align: center;
+  margin:0 auto;
+}
+
+
+
+form table td {
+  padding: 5px;
+  text-align: left ;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="tel"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  height:20px;
+  width:100%;
+  border-radius: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+form input[type="submit"] {
+  padding: 10px 30px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+form input[type="submit"]:active {
+  transform: scale(0.95); /* Apply a scale transformation on click */
+}
+/*joinInputpage*/
+
+#loginButton{
+  background-color: #fff;
+  padding: 10px 30px;
+  color: #666;
+  border: 1px solid #666;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px 20px; /* Add horizontal margin */
+}
+#loginButton:active{
+  transform:scale(0.95);
+}
+/*유저 정보 조회 페이지 */
+.container > h1 {
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.user-box{
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.user-input {
+  /* Add your desired CSS styles here */
+  margin-bottom: 10px;
+}
+
+.user-input input {
+  /* Add your desired CSS styles for the input element here */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+.button-container {
+  text-align: center;
+  margin:0 auto;
+  margin-top: 20px; /* Add margin as needed */
+}
+
+.info-button, .delete-button, .back-button {
+  /* Add your desired CSS styles for the buttons here */
+  padding: 10px 20px;
+  background-color: #FAF5EC;
+  border: 1px solid #605C59;
+  font-family: 'NanumSquareRound', sans-serif;
+  color: #000;
+  font-size: medium;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
+.info-button:hover, .delete-button:hover, .back-button:hover {
+  /* Add your desired CSS styles for button hover state here */
+  background-color: #605C59;
+  color:#FAF5EC;
+}
+
+/*timeDepositSelect.jsp*/
+
+.custom-table {
+  width: 100%;
+  font-family: 'NanumSquareRound', sans-serif;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.custom-table2{
+  width: 70%;
+  font-family: 'NanumSquareRound', sans-serif;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin:0 auto;
+}
+
+#joinForm input[type="submit"]:hover {
+  color:antiquewhite;
+  background-color: #94b1b9; /* 마우스 호버시 배경색 */
+
+}
+.custom-table2 > tr > th,
+.custom-table > tr > th {
+  padding: 10px;
+  text-align: center;
+  border: none;
+}
+.custom-table2 th,
+.custom-table th {
+  padding: 10px;
+  text-align: center;
+  border: none;
+}
+.container {
+  width:70%;
+  margin:0 auto;
+  text-align: center;
+}
+.custom-table2 th,
+.custom-table th {
+  background-color: #666;
+  font-weight: bold;
+  color:#fff;
+}
+
+.custom-button {
+  padding: 20px 30px;
+  color: #000;
+  border:1px solid #666;
+  cursor: pointer;
+  font-family: 'NanumSquareRound', sans-serif;
+  font-size: 16px;
+}
+
+.search{
+  width:80%;
+}
+
+.menu-custom-button-1 {
+  width:10%;
+  background-color: white;
+  height:50px;
+  border:1px solid #666;
+  border-radius: 20px;
+  color: #000;
+  cursor: pointer;
+  font-family: 'NanumSquareRound', sans-serif;
+  font-size: 18px;
+  margin-top:10px;
+  float:left;
+  margin:10px;
+}
+.menu-custom-button-2 {
+
+  width:10%;
+  background-color: white;
+  height:50px;
+  border:1px solid #666;
+  border-radius: 20px;
+  color: #000;
+  cursor: pointer;
+  font-family: 'NanumSquareRound', sans-serif;
+  font-size: 18px;
+  margin-top:10px;
+  float:left;
+}
+.menu-custom-button-2:hover,
+.menu-custom-button-1:hover {
+  background-color: #666;
+  color:#fff;
+}
+.custom-button:hover {
+  background-color: #666;
+  color:#fff;
+}
+
+.custom-button,
+.custom-table input[type="submit"],
+.custom-table2 input[type="submit"]{
+  padding: 10px 20px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: large;
+  font-family: 'NanumSquareRound', sans-serif;
+}
+
+.custom-table input[type="submit"]:hover ,
+.custom-table2 input[type="submit"]:hover{
+
+  background-color: #999;
+  color:#fff;
+}
+
+/*accountSelect.jsp*/
+#customer-name {
+  font-size: 30px;
+  text-align: left;
+  font-family: 'NanumSquareRound', sans-serif;
+  font-weight: bolder;
+  width:60%;
+}
+
+#account-info {
+  font-size: 16px;
+  color: #666;
+  font-family: 'NanumSquareRound', sans-serif;
+  width:60%;
+}
+#account-value{
+  font-family: 'NanumSquareRound', sans-serif;
+  float:right;
+  text-align: right;
+  font-size:30px;
+  font-weight: bold;
+  margin-right:10%;
+}
+#search-container{
+  text-align: left;
+  /*background-color: lightgrey;*/
+  /*border:solid 3px #605C59;*/
+  border-radius: 30px;
+  padding: 30px;
+}
+:root {
+  --white: #f1eaea;
+  --black: #181717;
+}
+html, body {
+  height: 100%;
+}
+#main_body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f1eaea;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  transition: all 0.7s;
+  -webkit-text-stroke: 4px #413834;
+  font-variation-settings: "wght" 900, "ital" 1;
+  font-size: 9rem;
+  text-align: center;
+  color: transparent;
+  font-family: "Meta", sans-serif;
+  cursor: pointer;
+}
+
+main:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 768px) {
+  #main_color {
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  #main_content {
+    width: 100%;
+  }
+
+  #main_color > #main-recommand {
+    width: 50%;
+  }
+}
+

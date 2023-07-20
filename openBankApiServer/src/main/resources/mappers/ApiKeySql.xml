@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kopo.openbankapiserver.dao.ApiKeyDao">
+    <select id="selectByKey" parameterType="String" resultType="ApiKeyDto">
+        SELECT 	*
+        FROM	APIKEYS_TB
+        WHERE	APIKEY_CD = #{apiKey}
+    </select>
+    <insert id="insert" parameterType="ApiKeyDto">
+        INSERT INTO APIKEYS_TB(APIKEY_CD, BANK1_ID, BANK2_ID, BANK3_ID, BANK4_ID)
+        VALUES(#{apiKey}, #{bank1Id, jdbcType=VARCHAR},
+               #{bank2Id, jdbcType=VARCHAR}, #{bank3Id, jdbcType=VARCHAR},
+               #{bank4Id, jdbcType=VARCHAR})
+    </insert>
+<!--    <update id="update" parameterType="BookInfoVO">-->
+<!--        UPDATE   BOOK_INFO_TBL-->
+<!--        SET      book_key = #{book_key},-->
+<!--                 book_reg_no = #{book_reg_no},-->
+<!--                 book_title = #{book_title},-->
+<!--                 book_author = #{book_author},-->
+<!--                 book_publisher = #{book_publisher}-->
+<!--        WHERE    book_key = #{book_key}-->
+<!--    </update>-->
+<!--    <delete id="delete" parameterType="String">-->
+<!--        DELETE BOOK_INFO_TBL-->
+<!--      WHERE  book_key = #{book_key}-->
+<!--    </delete>-->
+</mapper>

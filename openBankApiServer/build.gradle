@@ -1,0 +1,100 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.13'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id 'war'
+}
+
+bootWar.enabled = false
+war.enabled = true
+
+group = 'com.kopo'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    /**
+     * Web
+     */
+    // spring web
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    // tomcat
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    // jsp
+//    implementation 'javax.servlet:jstl:1.2'
+//    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.54'
+    // Spring Webflux (비동기 REST API를 만드는 데 유용한 Spring Web 모듈)
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+    /**
+     * Http 관련
+     */
+    // OkHttp
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
+    // httpclient
+    implementation 'org.apache.httpcomponents.client5:httpclient5:5.0.3'
+
+
+
+
+    /**
+     * Test
+     */
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    /**
+     * Util
+     */
+    // lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+
+    /**
+     * DB관련
+     */
+    // mybatis
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.1'
+    // jdbc
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    // ojdbc8
+    implementation 'com.oracle.database.jdbc:ojdbc8:21.3.0.0'
+    implementation 'com.oracle.database.jdbc:ucp:21.3.0.0'
+    implementation 'com.oracle.database.security:oraclepki:19.9.0.0'
+    implementation 'com.oracle.database.security:osdt_core:19.9.0.0'
+    implementation 'com.oracle.database.security:osdt_cert:21.3.0.0'
+    // gson
+    implementation 'com.google.code.gson:gson:2.8.8'
+    // httpcomponents
+    implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+
+    /**
+     * XML -> JSON 관련 implementation
+     */
+    implementation group: 'org.json', name: 'json', version: '20210307'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.9.0'
+
+    /**
+     * Json 파싱 관련
+     */
+    implementation 'com.google.code.gson:gson:2.9.0'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
